@@ -1,8 +1,8 @@
 //
 //  BaseCategoryViewController.m
-//  Soulmia
+//  GOModules
 //
-//  Created by gaookey on 2021/5/20.
+//  Created by gaookey on 2022/4/6.
 //
 
 #import "BaseCategoryViewController.h"

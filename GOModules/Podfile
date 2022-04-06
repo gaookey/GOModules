@@ -18,6 +18,7 @@ target 'GOModules' do
   pod "JXCategoryView"
   pod "JXPagingView/Pager"
   pod "YYCategories"
-
+  pod 'QMUIKit/QMUIComponents/QMUIImagePreviewView'
+  
 
 end

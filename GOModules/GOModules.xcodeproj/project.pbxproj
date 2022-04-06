@@ -50,6 +50,7 @@
 		EDEA9CB827FD8AF200D0E868 /* BaseCategoryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CB227FD8AF100D0E868 /* BaseCategoryHeaderView.m */; };
 		EDEA9CB927FD8AF200D0E868 /* BaseCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CB527FD8AF100D0E868 /* BaseCategoryViewController.m */; };
 		EDEA9CBA27FD8AF200D0E868 /* BaseCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CB627FD8AF100D0E868 /* BaseCategoryView.m */; };
+		EDEA9CBE27FD8E1B00D0E868 /* GOImagePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CBD27FD8E1B00D0E868 /* GOImagePreviewView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +115,8 @@
 		EDEA9CB527FD8AF100D0E868 /* BaseCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCategoryViewController.m; sourceTree = "<group>"; };
 		EDEA9CB627FD8AF100D0E868 /* BaseCategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCategoryView.m; sourceTree = "<group>"; };
 		EDEA9CB727FD8AF200D0E868 /* BaseCategoryHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCategoryHeaderView.h; sourceTree = "<group>"; };
+		EDEA9CBC27FD8E1B00D0E868 /* GOImagePreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GOImagePreviewView.h; sourceTree = "<group>"; };
+		EDEA9CBD27FD8E1B00D0E868 /* GOImagePreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GOImagePreviewView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +210,7 @@
 		EDEA9C5627FD704E00D0E868 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EDEA9CBB27FD8E0A00D0E868 /* GOImagePreviewView */,
 				EDEA9C9827FD7FD700D0E868 /* JXCategoryView */,
 				EDEA9C9527FD7B1200D0E868 /* GOSuccessAlertView */,
 				EDEA9C9027FD7AFD00D0E868 /* GOPageControl */,
@@ -363,6 +367,15 @@
 			path = JXCategoryViewDemo;
 			sourceTree = "<group>";
 		};
+		EDEA9CBB27FD8E0A00D0E868 /* GOImagePreviewView */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9CBC27FD8E1B00D0E868 /* GOImagePreviewView.h */,
+				EDEA9CBD27FD8E1B00D0E868 /* GOImagePreviewView.m */,
+			);
+			path = GOImagePreviewView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -499,6 +512,7 @@
 				EDEA9C7F27FD7A8200D0E868 /* GOAlertViewController.swift in Sources */,
 				EDEA9C6927FD77C800D0E868 /* GOImagesPagingView.m in Sources */,
 				EDEA9C9327FD7AFD00D0E868 /* GOPageControl.swift in Sources */,
+				EDEA9CBE27FD8E1B00D0E868 /* GOImagePreviewView.m in Sources */,
 				EDEA9C6C27FD77C800D0E868 /* GOPagingEnableLayout.m in Sources */,
 				EDEA9C3027FD6F6900D0E868 /* AppDelegate.m in Sources */,
 				EDEA9C8627FD7AA200D0E868 /* GOCustomTagsView.swift in Sources */,
