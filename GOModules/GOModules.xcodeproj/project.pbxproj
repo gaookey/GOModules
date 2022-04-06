@@ -51,6 +51,7 @@
 		EDEA9CB927FD8AF200D0E868 /* BaseCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CB527FD8AF100D0E868 /* BaseCategoryViewController.m */; };
 		EDEA9CBA27FD8AF200D0E868 /* BaseCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CB627FD8AF100D0E868 /* BaseCategoryView.m */; };
 		EDEA9CBE27FD8E1B00D0E868 /* GOImagePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CBD27FD8E1B00D0E868 /* GOImagePreviewView.m */; };
+		EDEA9CD227FD987E00D0E868 /* GORecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CD127FD987E00D0E868 /* GORecordButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +118,7 @@
 		EDEA9CB727FD8AF200D0E868 /* BaseCategoryHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCategoryHeaderView.h; sourceTree = "<group>"; };
 		EDEA9CBC27FD8E1B00D0E868 /* GOImagePreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GOImagePreviewView.h; sourceTree = "<group>"; };
 		EDEA9CBD27FD8E1B00D0E868 /* GOImagePreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GOImagePreviewView.m; sourceTree = "<group>"; };
+		EDEA9CD127FD987E00D0E868 /* GORecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GORecordButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 		EDEA9C5627FD704E00D0E868 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EDEA9CD027FD987700D0E868 /* GORecordButton */,
 				EDEA9CBB27FD8E0A00D0E868 /* GOImagePreviewView */,
 				EDEA9C9827FD7FD700D0E868 /* JXCategoryView */,
 				EDEA9C9527FD7B1200D0E868 /* GOSuccessAlertView */,
@@ -376,6 +379,14 @@
 			path = GOImagePreviewView;
 			sourceTree = "<group>";
 		};
+		EDEA9CD027FD987700D0E868 /* GORecordButton */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9CD127FD987E00D0E868 /* GORecordButton.swift */,
+			);
+			path = GORecordButton;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -523,6 +534,7 @@
 				EDEA9C6A27FD77C800D0E868 /* GOImagesPagingViewCell.m in Sources */,
 				EDEA9C8D27FD7ACD00D0E868 /* GOCategoryNavigationCell.swift in Sources */,
 				EDEA9C5427FD703200D0E868 /* GOEmptyDataViewManager.swift in Sources */,
+				EDEA9CD227FD987E00D0E868 /* GORecordButton.swift in Sources */,
 				EDEA9CB827FD8AF200D0E868 /* BaseCategoryHeaderView.m in Sources */,
 				EDEA9C7927FD7A7000D0E868 /* GOWaterflowLayout.swift in Sources */,
 				EDEA9C8527FD7AA200D0E868 /* GOCustomTagView.swift in Sources */,
