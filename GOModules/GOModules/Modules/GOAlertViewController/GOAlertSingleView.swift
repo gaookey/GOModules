@@ -1,6 +1,6 @@
 //
 //  GOAlertSingleView.swift
-//  BrandUIKit
+//  GOModules
 //
 //  Created by gaookey on 2021/7/1.
 //

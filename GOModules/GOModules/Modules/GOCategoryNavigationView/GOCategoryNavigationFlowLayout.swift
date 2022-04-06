@@ -2,7 +2,7 @@
 //  GOCategoryNavigationFlowLayout.swift
 //  GOCategoryNavigationView
 //
-//  Created by 高文立 on 2021/7/31.
+//  Created by gaookey on 2021/7/31.
 //
 
 import UIKit

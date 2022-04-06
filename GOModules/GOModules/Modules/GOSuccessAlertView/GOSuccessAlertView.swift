@@ -2,7 +2,7 @@
 //  GOSuccessAlertView.swift
 //  GOSuccessAlertView
 //
-//  Created by 高文立 on 2021/8/2.
+//  Created by gaookey on 2021/8/2.
 //
 
 import UIKit

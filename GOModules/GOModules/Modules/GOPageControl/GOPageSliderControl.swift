@@ -1,8 +1,8 @@
 //
 //  GOPageSliderControl.swift
-//  BrandUIKit
+//  GOModules
 //
-//  Created by 高文立 on 2021/8/4.
+//  Created by gaookey on 2021/8/4.
 //
 
 import UIKit

@@ -1,6 +1,6 @@
 //
 //  GOImagesPagingOptions.h
-//  BrandUIKit
+//  GOModules
 //
 //  Created by gaookey on 2021/6/10.
 //

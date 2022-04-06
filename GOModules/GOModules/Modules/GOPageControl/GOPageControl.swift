@@ -2,7 +2,7 @@
 //  GOPageControl.swift
 //  GOPageControl
 //
-//  Created by 高文立 on 2021/7/28.
+//  Created by gaookey on 2021/7/28.
 //
 
 import UIKit
