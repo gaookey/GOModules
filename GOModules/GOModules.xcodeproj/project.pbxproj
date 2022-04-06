@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4FA4D99EF33E3718EB49CBF /* Pods_GOModules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD5FF22C81B6049D6ED75F6 /* Pods_GOModules.framework */; };
+		EDEA9C3027FD6F6900D0E868 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C2F27FD6F6900D0E868 /* AppDelegate.m */; };
+		EDEA9C3327FD6F6900D0E868 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C3227FD6F6900D0E868 /* SceneDelegate.m */; };
+		EDEA9C3627FD6F6900D0E868 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C3527FD6F6900D0E868 /* ViewController.m */; };
+		EDEA9C3927FD6F6900D0E868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDEA9C3727FD6F6900D0E868 /* Main.storyboard */; };
+		EDEA9C3B27FD6F6A00D0E868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDEA9C3A27FD6F6A00D0E868 /* Assets.xcassets */; };
+		EDEA9C3E27FD6F6A00D0E868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDEA9C3C27FD6F6A00D0E868 /* LaunchScreen.storyboard */; };
+		EDEA9C4127FD6F6A00D0E868 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C4027FD6F6A00D0E868 /* main.m */; };
+		EDEA9C4927FD6F7900D0E868 /* HeaderFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C4827FD6F7900D0E868 /* HeaderFile.swift */; };
+		EDEA9C4C27FD6FAB00D0E868 /* GOAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C4B27FD6FAB00D0E868 /* GOAnimationView.swift */; };
+		EDEA9C5227FD703200D0E868 /* GOEmptyDataViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C4E27FD703200D0E868 /* GOEmptyDataViewOptions.swift */; };
+		EDEA9C5327FD703200D0E868 /* GOEmptyDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C4F27FD703200D0E868 /* GOEmptyDataView.swift */; };
+		EDEA9C5427FD703200D0E868 /* GOEmptyDataViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C5027FD703200D0E868 /* GOEmptyDataViewManager.swift */; };
+		EDEA9C5527FD703200D0E868 /* UIView+GOEmptyDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C5127FD703200D0E868 /* UIView+GOEmptyDataView.swift */; };
+		EDEA9C5927FD707300D0E868 /* GOHorizontalColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C5827FD707300D0E868 /* GOHorizontalColorsView.swift */; };
+		EDEA9C5C27FD773E00D0E868 /* GOImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C5B27FD773E00D0E868 /* GOImageListView.swift */; };
+		EDEA9C5F27FD776100D0E868 /* GOImagesCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C5E27FD776100D0E868 /* GOImagesCarouselView.swift */; };
+		EDEA9C6927FD77C800D0E868 /* GOImagesPagingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C6327FD77C800D0E868 /* GOImagesPagingView.m */; };
+		EDEA9C6A27FD77C800D0E868 /* GOImagesPagingViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C6527FD77C800D0E868 /* GOImagesPagingViewCell.m */; };
+		EDEA9C6B27FD77C800D0E868 /* GOImagesPagingOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C6627FD77C800D0E868 /* GOImagesPagingOptions.m */; };
+		EDEA9C6C27FD77C800D0E868 /* GOPagingEnableLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C6827FD77C800D0E868 /* GOPagingEnableLayout.m */; };
+		EDEA9C7227FD796A00D0E868 /* GOSafeAreaInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C7127FD796A00D0E868 /* GOSafeAreaInsets.swift */; };
+		EDEA9C7527FD7A2D00D0E868 /* GOStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C7427FD7A2D00D0E868 /* GOStarView.swift */; };
+		EDEA9C7927FD7A7000D0E868 /* GOWaterflowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C7727FD7A7000D0E868 /* GOWaterflowLayout.swift */; };
+		EDEA9C7A27FD7A7000D0E868 /* GOTagsListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C7827FD7A7000D0E868 /* GOTagsListLayout.swift */; };
+		EDEA9C7F27FD7A8200D0E868 /* GOAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C7C27FD7A8100D0E868 /* GOAlertViewController.swift */; };
+		EDEA9C8027FD7A8200D0E868 /* GOAlertNormalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C7D27FD7A8100D0E868 /* GOAlertNormalView.swift */; };
+		EDEA9C8127FD7A8200D0E868 /* GOAlertSingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C7E27FD7A8100D0E868 /* GOAlertSingleView.swift */; };
+		EDEA9C8527FD7AA200D0E868 /* GOCustomTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C8327FD7AA200D0E868 /* GOCustomTagView.swift */; };
+		EDEA9C8627FD7AA200D0E868 /* GOCustomTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C8427FD7AA200D0E868 /* GOCustomTagsView.swift */; };
+		EDEA9C8C27FD7ACD00D0E868 /* GOCategoryNavigationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C8827FD7ACD00D0E868 /* GOCategoryNavigationOptions.swift */; };
+		EDEA9C8D27FD7ACD00D0E868 /* GOCategoryNavigationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C8927FD7ACD00D0E868 /* GOCategoryNavigationCell.swift */; };
+		EDEA9C8E27FD7ACD00D0E868 /* GOCategoryNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C8A27FD7ACD00D0E868 /* GOCategoryNavigationView.swift */; };
+		EDEA9C8F27FD7ACD00D0E868 /* GOCategoryNavigationFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C8B27FD7ACD00D0E868 /* GOCategoryNavigationFlowLayout.swift */; };
+		EDEA9C9327FD7AFD00D0E868 /* GOPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C9127FD7AFD00D0E868 /* GOPageControl.swift */; };
+		EDEA9C9427FD7AFD00D0E868 /* GOPageSliderControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C9227FD7AFD00D0E868 /* GOPageSliderControl.swift */; };
+		EDEA9C9727FD7B1200D0E868 /* GOSuccessAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C9627FD7B1200D0E868 /* GOSuccessAlertView.swift */; };
+		EDEA9CA527FD80BF00D0E868 /* GOHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CA427FD80BF00D0E868 /* GOHeaderView.m */; };
+		EDEA9CAB27FD811D00D0E868 /* GOCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CAA27FD811D00D0E868 /* GOCategoryViewController.m */; };
+		EDEA9CAE27FD830B00D0E868 /* GOCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CAD27FD830B00D0E868 /* GOCategoryView.m */; };
+		EDEA9CB827FD8AF200D0E868 /* BaseCategoryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CB227FD8AF100D0E868 /* BaseCategoryHeaderView.m */; };
+		EDEA9CB927FD8AF200D0E868 /* BaseCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CB527FD8AF100D0E868 /* BaseCategoryViewController.m */; };
+		EDEA9CBA27FD8AF200D0E868 /* BaseCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CB627FD8AF100D0E868 /* BaseCategoryView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5BD5FF22C81B6049D6ED75F6 /* Pods_GOModules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GOModules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B351D0069C8EB6F95918AA /* Pods-GOModules.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GOModules.release.xcconfig"; path = "Target Support Files/Pods-GOModules/Pods-GOModules.release.xcconfig"; sourceTree = "<group>"; };
+		AFD16297F48AB5D47BC18381 /* Pods-GOModules.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GOModules.debug.xcconfig"; path = "Target Support Files/Pods-GOModules/Pods-GOModules.debug.xcconfig"; sourceTree = "<group>"; };
+		EDEA9C2B27FD6F6900D0E868 /* GOModules.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOModules.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDEA9C2E27FD6F6900D0E868 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDEA9C2F27FD6F6900D0E868 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDEA9C3127FD6F6900D0E868 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		EDEA9C3227FD6F6900D0E868 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		EDEA9C3427FD6F6900D0E868 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EDEA9C3527FD6F6900D0E868 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDEA9C3827FD6F6900D0E868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDEA9C3A27FD6F6A00D0E868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDEA9C3D27FD6F6A00D0E868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDEA9C3F27FD6F6A00D0E868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDEA9C4027FD6F6A00D0E868 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDEA9C4727FD6F7900D0E868 /* GOModules-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GOModules-Bridging-Header.h"; sourceTree = "<group>"; };
+		EDEA9C4827FD6F7900D0E868 /* HeaderFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderFile.swift; sourceTree = "<group>"; };
+		EDEA9C4B27FD6FAB00D0E868 /* GOAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOAnimationView.swift; sourceTree = "<group>"; };
+		EDEA9C4E27FD703200D0E868 /* GOEmptyDataViewOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOEmptyDataViewOptions.swift; sourceTree = "<group>"; };
+		EDEA9C4F27FD703200D0E868 /* GOEmptyDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOEmptyDataView.swift; sourceTree = "<group>"; };
+		EDEA9C5027FD703200D0E868 /* GOEmptyDataViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOEmptyDataViewManager.swift; sourceTree = "<group>"; };
+		EDEA9C5127FD703200D0E868 /* UIView+GOEmptyDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+GOEmptyDataView.swift"; sourceTree = "<group>"; };
+		EDEA9C5827FD707300D0E868 /* GOHorizontalColorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOHorizontalColorsView.swift; sourceTree = "<group>"; };
+		EDEA9C5B27FD773E00D0E868 /* GOImageListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOImageListView.swift; sourceTree = "<group>"; };
+		EDEA9C5E27FD776100D0E868 /* GOImagesCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOImagesCarouselView.swift; sourceTree = "<group>"; };
+		EDEA9C6127FD77C800D0E868 /* GOImagesPagingOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOImagesPagingOptions.h; sourceTree = "<group>"; };
+		EDEA9C6227FD77C800D0E868 /* GOImagesPagingViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOImagesPagingViewCell.h; sourceTree = "<group>"; };
+		EDEA9C6327FD77C800D0E868 /* GOImagesPagingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOImagesPagingView.m; sourceTree = "<group>"; };
+		EDEA9C6427FD77C800D0E868 /* GOPagingEnableLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOPagingEnableLayout.h; sourceTree = "<group>"; };
+		EDEA9C6527FD77C800D0E868 /* GOImagesPagingViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOImagesPagingViewCell.m; sourceTree = "<group>"; };
+		EDEA9C6627FD77C800D0E868 /* GOImagesPagingOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOImagesPagingOptions.m; sourceTree = "<group>"; };
+		EDEA9C6727FD77C800D0E868 /* GOImagesPagingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOImagesPagingView.h; sourceTree = "<group>"; };
+		EDEA9C6827FD77C800D0E868 /* GOPagingEnableLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOPagingEnableLayout.m; sourceTree = "<group>"; };
+		EDEA9C7127FD796A00D0E868 /* GOSafeAreaInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOSafeAreaInsets.swift; sourceTree = "<group>"; };
+		EDEA9C7427FD7A2D00D0E868 /* GOStarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOStarView.swift; sourceTree = "<group>"; };
+		EDEA9C7727FD7A7000D0E868 /* GOWaterflowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOWaterflowLayout.swift; sourceTree = "<group>"; };
+		EDEA9C7827FD7A7000D0E868 /* GOTagsListLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOTagsListLayout.swift; sourceTree = "<group>"; };
+		EDEA9C7C27FD7A8100D0E868 /* GOAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOAlertViewController.swift; sourceTree = "<group>"; };
+		EDEA9C7D27FD7A8100D0E868 /* GOAlertNormalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOAlertNormalView.swift; sourceTree = "<group>"; };
+		EDEA9C7E27FD7A8100D0E868 /* GOAlertSingleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOAlertSingleView.swift; sourceTree = "<group>"; };
+		EDEA9C8327FD7AA200D0E868 /* GOCustomTagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOCustomTagView.swift; sourceTree = "<group>"; };
+		EDEA9C8427FD7AA200D0E868 /* GOCustomTagsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOCustomTagsView.swift; sourceTree = "<group>"; };
+		EDEA9C8827FD7ACD00D0E868 /* GOCategoryNavigationOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOCategoryNavigationOptions.swift; sourceTree = "<group>"; };
+		EDEA9C8927FD7ACD00D0E868 /* GOCategoryNavigationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOCategoryNavigationCell.swift; sourceTree = "<group>"; };
+		EDEA9C8A27FD7ACD00D0E868 /* GOCategoryNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOCategoryNavigationView.swift; sourceTree = "<group>"; };
+		EDEA9C8B27FD7ACD00D0E868 /* GOCategoryNavigationFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOCategoryNavigationFlowLayout.swift; sourceTree = "<group>"; };
+		EDEA9C9127FD7AFD00D0E868 /* GOPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOPageControl.swift; sourceTree = "<group>"; };
+		EDEA9C9227FD7AFD00D0E868 /* GOPageSliderControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOPageSliderControl.swift; sourceTree = "<group>"; };
+		EDEA9C9627FD7B1200D0E868 /* GOSuccessAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOSuccessAlertView.swift; sourceTree = "<group>"; };
+		EDEA9CA327FD80BF00D0E868 /* GOHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GOHeaderView.h; sourceTree = "<group>"; };
+		EDEA9CA427FD80BF00D0E868 /* GOHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GOHeaderView.m; sourceTree = "<group>"; };
+		EDEA9CA927FD811D00D0E868 /* GOCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GOCategoryViewController.h; sourceTree = "<group>"; };
+		EDEA9CAA27FD811D00D0E868 /* GOCategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GOCategoryViewController.m; sourceTree = "<group>"; };
+		EDEA9CAC27FD830B00D0E868 /* GOCategoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GOCategoryView.h; sourceTree = "<group>"; };
+		EDEA9CAD27FD830B00D0E868 /* GOCategoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GOCategoryView.m; sourceTree = "<group>"; };
+		EDEA9CB227FD8AF100D0E868 /* BaseCategoryHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCategoryHeaderView.m; sourceTree = "<group>"; };
+		EDEA9CB327FD8AF100D0E868 /* BaseCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCategoryViewController.h; sourceTree = "<group>"; };
+		EDEA9CB427FD8AF100D0E868 /* BaseCategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCategoryView.h; sourceTree = "<group>"; };
+		EDEA9CB527FD8AF100D0E868 /* BaseCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCategoryViewController.m; sourceTree = "<group>"; };
+		EDEA9CB627FD8AF100D0E868 /* BaseCategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCategoryView.m; sourceTree = "<group>"; };
+		EDEA9CB727FD8AF200D0E868 /* BaseCategoryHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCategoryHeaderView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDEA9C2827FD6F6900D0E868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4FA4D99EF33E3718EB49CBF /* Pods_GOModules.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E519C45A357E6027F603036 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFD16297F48AB5D47BC18381 /* Pods-GOModules.debug.xcconfig */,
+				91B351D0069C8EB6F95918AA /* Pods-GOModules.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9CBDB65EE25FF6B9592ABDED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BD5FF22C81B6049D6ED75F6 /* Pods_GOModules.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDEA9C2227FD6F6900D0E868 = {
+			isa = PBXGroup;
+			children = (
+				EDEA9C2D27FD6F6900D0E868 /* GOModules */,
+				EDEA9C2C27FD6F6900D0E868 /* Products */,
+				5E519C45A357E6027F603036 /* Pods */,
+				9CBDB65EE25FF6B9592ABDED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDEA9C2C27FD6F6900D0E868 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9C2B27FD6F6900D0E868 /* GOModules.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDEA9C2D27FD6F6900D0E868 /* GOModules */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9CA227FD809500D0E868 /* JXCategoryViewDemo */,
+				EDEA9C5627FD704E00D0E868 /* Modules */,
+				EDEA9C2E27FD6F6900D0E868 /* AppDelegate.h */,
+				EDEA9C2F27FD6F6900D0E868 /* AppDelegate.m */,
+				EDEA9C3127FD6F6900D0E868 /* SceneDelegate.h */,
+				EDEA9C3227FD6F6900D0E868 /* SceneDelegate.m */,
+				EDEA9C3427FD6F6900D0E868 /* ViewController.h */,
+				EDEA9C3527FD6F6900D0E868 /* ViewController.m */,
+				EDEA9C4827FD6F7900D0E868 /* HeaderFile.swift */,
+				EDEA9C3727FD6F6900D0E868 /* Main.storyboard */,
+				EDEA9C3A27FD6F6A00D0E868 /* Assets.xcassets */,
+				EDEA9C3C27FD6F6A00D0E868 /* LaunchScreen.storyboard */,
+				EDEA9C3F27FD6F6A00D0E868 /* Info.plist */,
+				EDEA9C4027FD6F6A00D0E868 /* main.m */,
+				EDEA9C4727FD6F7900D0E868 /* GOModules-Bridging-Header.h */,
+			);
+			path = GOModules;
+			sourceTree = "<group>";
+		};
+		EDEA9C4A27FD6FAB00D0E868 /* GOAnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9C4B27FD6FAB00D0E868 /* GOAnimationView.swift */,
+			);
+			path = GOAnimationView;
+			sourceTree = "<group>";
+		};
+		EDEA9C4D27FD703200D0E868 /* GOEmptyDataView */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9C4E27FD703200D0E868 /* GOEmptyDataViewOptions.swift */,
+				EDEA9C4F27FD703200D0E868 /* GOEmptyDataView.swift */,
+				EDEA9C5027FD703200D0E868 /* GOEmptyDataViewManager.swift */,
+				EDEA9C5127FD703200D0E868 /* UIView+GOEmptyDataView.swift */,
+			);
+			path = GOEmptyDataView;
+			sourceTree = "<group>";
+		};
+		EDEA9C5627FD704E00D0E868 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9C9827FD7FD700D0E868 /* JXCategoryView */,
+				EDEA9C9527FD7B1200D0E868 /* GOSuccessAlertView */,
+				EDEA9C9027FD7AFD00D0E868 /* GOPageControl */,
+				EDEA9C8727FD7ACD00D0E868 /* GOCategoryNavigationView */,
+				EDEA9C8227FD7AA200D0E868 /* GOCustomTagsView */,
+				EDEA9C7B27FD7A8100D0E868 /* GOAlertViewController */,
+				EDEA9C7627FD7A7000D0E868 /* GOWaterflowLayout */,
+				EDEA9C7327FD7A2D00D0E868 /* GOStarView */,
+				EDEA9C7027FD796A00D0E868 /* GOSafeAreaInsets */,
+				EDEA9C6027FD77C800D0E868 /* GOPagingEnableLayout */,
+				EDEA9C5D27FD776100D0E868 /* GOImagesCarouselView */,
+				EDEA9C5A27FD773E00D0E868 /* GOImageListView */,
+				EDEA9C5727FD707300D0E868 /* GOHorizontalColorsView */,
+				EDEA9C4D27FD703200D0E868 /* GOEmptyDataView */,
+				EDEA9C4A27FD6FAB00D0E868 /* GOAnimationView */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EDEA9C5727FD707300D0E868 /* GOHorizontalColorsView */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9C5827FD707300D0E868 /* GOHorizontalColorsView.swift */,
+			);
+			path = GOHorizontalColorsView;
+			sourceTree = "<group>";
+		};
+		EDEA9C5A27FD773E00D0E868 /* GOImageListView */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9C5B27FD773E00D0E868 /* GOImageListView.swift */,
+			);
+			path = GOImageListView;
+			sourceTree = "<group>";
+		};
+		EDEA9C5D27FD776100D0E868 /* GOImagesCarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9C5E27FD776100D0E868 /* GOImagesCarouselView.swift */,
+			);
+			path = GOImagesCarouselView;
+			sourceTree = "<group>";
+		};
+		EDEA9C6027FD77C800D0E868 /* GOPagingEnableLayout */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9C6127FD77C800D0E868 /* GOImagesPagingOptions.h */,
+				EDEA9C6627FD77C800D0E868 /* GOImagesPagingOptions.m */,
+				EDEA9C6727FD77C800D0E868 /* GOImagesPagingView.h */,
+				EDEA9C6327FD77C800D0E868 /* GOImagesPagingView.m */,
+				EDEA9C6227FD77C800D0E868 /* GOImagesPagingViewCell.h */,
+				EDEA9C6527FD77C800D0E868 /* GOImagesPagingViewCell.m */,
+				EDEA9C6427FD77C800D0E868 /* GOPagingEnableLayout.h */,
+				EDEA9C6827FD77C800D0E868 /* GOPagingEnableLayout.m */,
+			);
+			path = GOPagingEnableLayout;
+			sourceTree = "<group>";
+		};
+		EDEA9C7027FD796A00D0E868 /* GOSafeAreaInsets */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9C7127FD796A00D0E868 /* GOSafeAreaInsets.swift */,
+			);
+			path = GOSafeAreaInsets;
+			sourceTree = "<group>";
+		};
+		EDEA9C7327FD7A2D00D0E868 /* GOStarView */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9C7427FD7A2D00D0E868 /* GOStarView.swift */,
+			);
+			path = GOStarView;
+			sourceTree = "<group>";
+		};
+		EDEA9C7627FD7A7000D0E868 /* GOWaterflowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9C7727FD7A7000D0E868 /* GOWaterflowLayout.swift */,
+				EDEA9C7827FD7A7000D0E868 /* GOTagsListLayout.swift */,
+			);
+			path = GOWaterflowLayout;
+			sourceTree = "<group>";
+		};
+		EDEA9C7B27FD7A8100D0E868 /* GOAlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9C7C27FD7A8100D0E868 /* GOAlertViewController.swift */,
+				EDEA9C7D27FD7A8100D0E868 /* GOAlertNormalView.swift */,
+				EDEA9C7E27FD7A8100D0E868 /* GOAlertSingleView.swift */,
+			);
+			path = GOAlertViewController;
+			sourceTree = "<group>";
+		};
+		EDEA9C8227FD7AA200D0E868 /* GOCustomTagsView */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9C8327FD7AA200D0E868 /* GOCustomTagView.swift */,
+				EDEA9C8427FD7AA200D0E868 /* GOCustomTagsView.swift */,
+			);
+			path = GOCustomTagsView;
+			sourceTree = "<group>";
+		};
+		EDEA9C8727FD7ACD00D0E868 /* GOCategoryNavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9C8827FD7ACD00D0E868 /* GOCategoryNavigationOptions.swift */,
+				EDEA9C8927FD7ACD00D0E868 /* GOCategoryNavigationCell.swift */,
+				EDEA9C8A27FD7ACD00D0E868 /* GOCategoryNavigationView.swift */,
+				EDEA9C8B27FD7ACD00D0E868 /* GOCategoryNavigationFlowLayout.swift */,
+			);
+			path = GOCategoryNavigationView;
+			sourceTree = "<group>";
+		};
+		EDEA9C9027FD7AFD00D0E868 /* GOPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9C9127FD7AFD00D0E868 /* GOPageControl.swift */,
+				EDEA9C9227FD7AFD00D0E868 /* GOPageSliderControl.swift */,
+			);
+			path = GOPageControl;
+			sourceTree = "<group>";
+		};
+		EDEA9C9527FD7B1200D0E868 /* GOSuccessAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9C9627FD7B1200D0E868 /* GOSuccessAlertView.swift */,
+			);
+			path = GOSuccessAlertView;
+			sourceTree = "<group>";
+		};
+		EDEA9C9827FD7FD700D0E868 /* JXCategoryView */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9CB727FD8AF200D0E868 /* BaseCategoryHeaderView.h */,
+				EDEA9CB227FD8AF100D0E868 /* BaseCategoryHeaderView.m */,
+				EDEA9CB427FD8AF100D0E868 /* BaseCategoryView.h */,
+				EDEA9CB627FD8AF100D0E868 /* BaseCategoryView.m */,
+				EDEA9CB327FD8AF100D0E868 /* BaseCategoryViewController.h */,
+				EDEA9CB527FD8AF100D0E868 /* BaseCategoryViewController.m */,
+			);
+			path = JXCategoryView;
+			sourceTree = "<group>";
+		};
+		EDEA9CA227FD809500D0E868 /* JXCategoryViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA9CA327FD80BF00D0E868 /* GOHeaderView.h */,
+				EDEA9CA427FD80BF00D0E868 /* GOHeaderView.m */,
+				EDEA9CA927FD811D00D0E868 /* GOCategoryViewController.h */,
+				EDEA9CAA27FD811D00D0E868 /* GOCategoryViewController.m */,
+				EDEA9CAC27FD830B00D0E868 /* GOCategoryView.h */,
+				EDEA9CAD27FD830B00D0E868 /* GOCategoryView.m */,
+			);
+			path = JXCategoryViewDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDEA9C2A27FD6F6900D0E868 /* GOModules */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDEA9C4427FD6F6A00D0E868 /* Build configuration list for PBXNativeTarget "GOModules" */;
+			buildPhases = (
+				EFCEF9CC68BBAD6F938AA621 /* [CP] Check Pods Manifest.lock */,
+				EDEA9C2727FD6F6900D0E868 /* Sources */,
+				EDEA9C2827FD6F6900D0E868 /* Frameworks */,
+				EDEA9C2927FD6F6900D0E868 /* Resources */,
+				D2F1685244973B9CF4A6B416 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GOModules;
+			productName = GOModules;
+			productReference = EDEA9C2B27FD6F6900D0E868 /* GOModules.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDEA9C2327FD6F6900D0E868 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					EDEA9C2A27FD6F6900D0E868 = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = EDEA9C2627FD6F6900D0E868 /* Build configuration list for PBXProject "GOModules" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDEA9C2227FD6F6900D0E868;
+			productRefGroup = EDEA9C2C27FD6F6900D0E868 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDEA9C2A27FD6F6900D0E868 /* GOModules */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDEA9C2927FD6F6900D0E868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDEA9C3E27FD6F6A00D0E868 /* LaunchScreen.storyboard in Resources */,
+				EDEA9C3B27FD6F6A00D0E868 /* Assets.xcassets in Resources */,
+				EDEA9C3927FD6F6900D0E868 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D2F1685244973B9CF4A6B416 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GOModules/Pods-GOModules-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GOModules/Pods-GOModules-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GOModules/Pods-GOModules-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFCEF9CC68BBAD6F938AA621 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GOModules-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDEA9C2727FD6F6900D0E868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDEA9C7A27FD7A7000D0E868 /* GOTagsListLayout.swift in Sources */,
+				EDEA9C6B27FD77C800D0E868 /* GOImagesPagingOptions.m in Sources */,
+				EDEA9C4927FD6F7900D0E868 /* HeaderFile.swift in Sources */,
+				EDEA9C8F27FD7ACD00D0E868 /* GOCategoryNavigationFlowLayout.swift in Sources */,
+				EDEA9C4C27FD6FAB00D0E868 /* GOAnimationView.swift in Sources */,
+				EDEA9C5327FD703200D0E868 /* GOEmptyDataView.swift in Sources */,
+				EDEA9CAB27FD811D00D0E868 /* GOCategoryViewController.m in Sources */,
+				EDEA9CB927FD8AF200D0E868 /* BaseCategoryViewController.m in Sources */,
+				EDEA9C8027FD7A8200D0E868 /* GOAlertNormalView.swift in Sources */,
+				EDEA9C5F27FD776100D0E868 /* GOImagesCarouselView.swift in Sources */,
+				EDEA9C3627FD6F6900D0E868 /* ViewController.m in Sources */,
+				EDEA9CA527FD80BF00D0E868 /* GOHeaderView.m in Sources */,
+				EDEA9C5C27FD773E00D0E868 /* GOImageListView.swift in Sources */,
+				EDEA9C5227FD703200D0E868 /* GOEmptyDataViewOptions.swift in Sources */,
+				EDEA9C9427FD7AFD00D0E868 /* GOPageSliderControl.swift in Sources */,
+				EDEA9C8C27FD7ACD00D0E868 /* GOCategoryNavigationOptions.swift in Sources */,
+				EDEA9C5527FD703200D0E868 /* UIView+GOEmptyDataView.swift in Sources */,
+				EDEA9C7227FD796A00D0E868 /* GOSafeAreaInsets.swift in Sources */,
+				EDEA9C7F27FD7A8200D0E868 /* GOAlertViewController.swift in Sources */,
+				EDEA9C6927FD77C800D0E868 /* GOImagesPagingView.m in Sources */,
+				EDEA9C9327FD7AFD00D0E868 /* GOPageControl.swift in Sources */,
+				EDEA9C6C27FD77C800D0E868 /* GOPagingEnableLayout.m in Sources */,
+				EDEA9C3027FD6F6900D0E868 /* AppDelegate.m in Sources */,
+				EDEA9C8627FD7AA200D0E868 /* GOCustomTagsView.swift in Sources */,
+				EDEA9C7527FD7A2D00D0E868 /* GOStarView.swift in Sources */,
+				EDEA9CAE27FD830B00D0E868 /* GOCategoryView.m in Sources */,
+				EDEA9CBA27FD8AF200D0E868 /* BaseCategoryView.m in Sources */,
+				EDEA9C5927FD707300D0E868 /* GOHorizontalColorsView.swift in Sources */,
+				EDEA9C6A27FD77C800D0E868 /* GOImagesPagingViewCell.m in Sources */,
+				EDEA9C8D27FD7ACD00D0E868 /* GOCategoryNavigationCell.swift in Sources */,
+				EDEA9C5427FD703200D0E868 /* GOEmptyDataViewManager.swift in Sources */,
+				EDEA9CB827FD8AF200D0E868 /* BaseCategoryHeaderView.m in Sources */,
+				EDEA9C7927FD7A7000D0E868 /* GOWaterflowLayout.swift in Sources */,
+				EDEA9C8527FD7AA200D0E868 /* GOCustomTagView.swift in Sources */,
+				EDEA9C8127FD7A8200D0E868 /* GOAlertSingleView.swift in Sources */,
+				EDEA9C8E27FD7ACD00D0E868 /* GOCategoryNavigationView.swift in Sources */,
+				EDEA9C9727FD7B1200D0E868 /* GOSuccessAlertView.swift in Sources */,
+				EDEA9C4127FD6F6A00D0E868 /* main.m in Sources */,
+				EDEA9C3327FD6F6900D0E868 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EDEA9C3727FD6F6900D0E868 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDEA9C3827FD6F6900D0E868 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDEA9C3C27FD6F6A00D0E868 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDEA9C3D27FD6F6A00D0E868 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDEA9C4227FD6F6A00D0E868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EDEA9C4327FD6F6A00D0E868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDEA9C4527FD6F6A00D0E868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFD16297F48AB5D47BC18381 /* Pods-GOModules.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C328W23K3L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GOModules/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaowenli.GOModules;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "GOModules/GOModules-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDEA9C4627FD6F6A00D0E868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91B351D0069C8EB6F95918AA /* Pods-GOModules.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C328W23K3L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GOModules/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaowenli.GOModules;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "GOModules/GOModules-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDEA9C2627FD6F6900D0E868 /* Build configuration list for PBXProject "GOModules" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDEA9C4227FD6F6A00D0E868 /* Debug */,
+				EDEA9C4327FD6F6A00D0E868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDEA9C4427FD6F6A00D0E868 /* Build configuration list for PBXNativeTarget "GOModules" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDEA9C4527FD6F6A00D0E868 /* Debug */,
+				EDEA9C4627FD6F6A00D0E868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDEA9C2327FD6F6900D0E868 /* Project object */;
+}
