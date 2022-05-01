@@ -29,7 +29,13 @@
 }
 
 - (void)imageViewAction {
-    NSArray *images = @[@"https://picsum.photos/300/300", @"https://picsum.photos/300/300", @"https://picsum.photos/300/300", @"https://picsum.photos/300/300", @"https://picsum.photos/300/300", @"https://picsum.photos/300/300"];
+    NSArray *images = @[
+        @"https://picsum.photos/600/300",
+        @"https://ddg-mall-test.obs.cn-north-4.myhuaweicloud.com/dr-test%2Fbusiness%2Ffile%2Fbb0cc146-847d-424a-a9f9-4a5f8576c4d9.mp4",
+        @"https://picsum.photos/800/500",
+        @"https://picsum.photos/1000/700",
+        @"https://picsum.photos/300/300",
+        @"https://picsum.photos/300/300"];
     NSMutableArray *views = [NSMutableArray array];
     for (NSInteger i = 0; i < images.count; i ++) {
         [views addObject:self.imageView];
@@ -41,5 +47,7 @@
 - (IBAction)pushCategoryViewController {
     [self.navigationController pushViewController:[[GOCategoryViewController alloc] init] animated:YES];
 }
+
+ 
 
 @end

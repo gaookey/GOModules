@@ -12,8 +12,8 @@
 
 @property(nonatomic, strong) QMUIImagePreviewViewController *imagePreviewViewController;
 
-@property(nonatomic, strong) NSArray <NSString*>*images;
-@property (nonatomic, strong) NSArray <UIView*>*views;
+@property(nonatomic, strong)  NSArray <NSString*> *images;
+@property (nonatomic, strong) NSArray <UIView*> *views;
 @property (nonatomic, assign) NSUInteger currentIndex;
 
 @end
@@ -22,24 +22,30 @@
 
 static GOImagePreviewView *instance = nil;
 
-static dispatch_once_t onceToken;
-
 + (instancetype)shared {
+    static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[[self class] alloc] init];
-        [instance initView];
     });
     return instance;
 }
 
++ (instancetype)allocWithZone:(struct _NSZone *)zone {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [super allocWithZone:zone];
+    });
+    return instance;
+}
+
+- (id)copyWithZone:(struct _NSZone *)zone {
+    return instance;
+}
+
 - (void)showImages:(NSArray<NSString *> *)images views:(NSArray<UIView *> *)views currentIndex:(NSUInteger)currentIndex {
-    if (images.count != views.count || images.count <= currentIndex) {
-        return;
-    }
-    instance.images = [NSArray array];
-    instance.views = [NSArray array];
-    instance.images = images;
-    instance.views = views;
+    
+    instance.images = [NSArray arrayWithArray:images];
+    instance.views = [NSArray arrayWithArray:views];
     instance.currentIndex = currentIndex;
     
     [instance showImage];
@@ -63,38 +69,56 @@ static dispatch_once_t onceToken;
     return instance.images.count;
 }
 - (void)imagePreviewView:(QMUIImagePreviewView *)imagePreviewView renderZoomImageView:(QMUIZoomImageView *)zoomImageView atIndex:(NSUInteger)index {
+    zoomImageView.reusedIdentifier = @(index);
+    zoomImageView.image = [UIImage imageNamed:@"placeholder_image"];
     
-    [[SDWebImageManager sharedManager] loadImageWithURL:[NSURL URLWithString:instance.images[index]] options:SDWebImageRetryFailed progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
-        if (image != nil) {
+    NSString *url = instance.images[index];
+    
+    if ([url hasSuffix:@".mp4"]) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if ([zoomImageView.reusedIdentifier isEqual:@(index)]) {
+                AVPlayerItem *item = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:url]];
+                zoomImageView.videoPlayerItem = item;
+            }
+        });
+    } else {
+        [[SDWebImageManager sharedManager] loadImageWithURL:[NSURL URLWithString:url] options:SDWebImageRetryFailed progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
             zoomImageView.image = image;
-        }
-    }];
+        }];
+    }
 }
 
 - (QMUIImagePreviewMediaType)imagePreviewView:(QMUIImagePreviewView *)imagePreviewView assetTypeAtIndex:(NSUInteger)index {
+    if ([instance.images[index] hasSuffix:@".mp4"]) {
+        return QMUIImagePreviewMediaTypeVideo;
+    }
     return QMUIImagePreviewMediaTypeImage;
 }
 
 - (void)imagePreviewView:(QMUIImagePreviewView *)imagePreviewView didScrollToIndex:(NSUInteger)index {
     instance.imagePreviewViewController.sourceImageView = ^UIView *{
-        if (instance.currentIndex >= instance.views.count) {
+        if (index >= instance.views.count) {
             return [[UIView alloc] init];
         }
         return instance.views[index];
     };
-    if (instance.didScrollToItem) {
-        instance.didScrollToItem(index);
+    if (instance.didScrollToIndex) {
+        instance.didScrollToIndex(index);
     }
+    
+    //    if ([instance.images[index] hasSuffix:@".mp4"]) {
+    //        QMUIZoomImageView *zoomImageView = [imagePreviewView zoomImageViewAtIndex:index];
+    //        [zoomImageView.videoPlayerLayer.player play];
+    //        zoomImageView.videoCenteredPlayButton.hidden = YES;
+    //    }
 }
+
 #pragma mark - <QMUIZoomImageViewDelegate>
 - (void)singleTouchInZoomingImageView:(QMUIZoomImageView *)zoomImageView location:(CGPoint)location {
     UIViewController *rootVC = [UIApplication sharedApplication].windows.lastObject.rootViewController;
     [rootVC dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)initView {
-    
-}
 
 #pragma mark - lazy
 - (QMUIImagePreviewViewController *)imagePreviewViewController {
@@ -106,8 +130,8 @@ static dispatch_once_t onceToken;
         _imagePreviewViewController.qmui_visibleStateDidChangeBlock = ^(QMUIImagePreviewViewController *viewController, QMUIViewControllerVisibleState visibleState) {
             if (visibleState == QMUIViewControllerWillDisappear) {
                 NSInteger exitAtIndex = viewController.imagePreviewView.currentImageIndex;
-                if (instance.exitBlock) {
-                    instance.exitBlock(exitAtIndex);
+                if (instance.currentImageIndex) {
+                    instance.currentImageIndex(exitAtIndex);
                 }
             }
         };

@@ -16,8 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)showImages:(NSArray <NSString*>*)images views:(NSArray <UIView *>*)views currentIndex:(NSUInteger)currentIndex ;
 
-@property (nonatomic, copy) void (^exitBlock)(NSUInteger index);
-@property (nonatomic, copy) void (^didScrollToItem)(NSUInteger index);
+@property (nonatomic, copy) void (^currentImageIndex)(NSUInteger index);
+@property (nonatomic, copy) void (^didScrollToIndex)(NSUInteger index);
 
 @end
 
