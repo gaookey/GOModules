@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E4FA4D99EF33E3718EB49CBF /* Pods_GOModules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD5FF22C81B6049D6ED75F6 /* Pods_GOModules.framework */; };
+		EDD27D442875A2E00093969B /* GOImagePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD27D432875A2E00093969B /* GOImagePreviewView.m */; };
 		EDEA9C3027FD6F6900D0E868 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C2F27FD6F6900D0E868 /* AppDelegate.m */; };
 		EDEA9C3327FD6F6900D0E868 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C3227FD6F6900D0E868 /* SceneDelegate.m */; };
 		EDEA9C3627FD6F6900D0E868 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9C3527FD6F6900D0E868 /* ViewController.m */; };
@@ -50,7 +51,6 @@
 		EDEA9CB827FD8AF200D0E868 /* BaseCategoryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CB227FD8AF100D0E868 /* BaseCategoryHeaderView.m */; };
 		EDEA9CB927FD8AF200D0E868 /* BaseCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CB527FD8AF100D0E868 /* BaseCategoryViewController.m */; };
 		EDEA9CBA27FD8AF200D0E868 /* BaseCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CB627FD8AF100D0E868 /* BaseCategoryView.m */; };
-		EDEA9CBE27FD8E1B00D0E868 /* GOImagePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CBD27FD8E1B00D0E868 /* GOImagePreviewView.m */; };
 		EDEA9CD227FD987E00D0E868 /* GORecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA9CD127FD987E00D0E868 /* GORecordButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +58,8 @@
 		5BD5FF22C81B6049D6ED75F6 /* Pods_GOModules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GOModules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B351D0069C8EB6F95918AA /* Pods-GOModules.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GOModules.release.xcconfig"; path = "Target Support Files/Pods-GOModules/Pods-GOModules.release.xcconfig"; sourceTree = "<group>"; };
 		AFD16297F48AB5D47BC18381 /* Pods-GOModules.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GOModules.debug.xcconfig"; path = "Target Support Files/Pods-GOModules/Pods-GOModules.debug.xcconfig"; sourceTree = "<group>"; };
+		EDD27D422875A2E00093969B /* GOImagePreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOImagePreviewView.h; sourceTree = "<group>"; };
+		EDD27D432875A2E00093969B /* GOImagePreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOImagePreviewView.m; sourceTree = "<group>"; };
 		EDEA9C2B27FD6F6900D0E868 /* GOModules.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOModules.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDEA9C2E27FD6F6900D0E868 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EDEA9C2F27FD6F6900D0E868 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,8 +118,6 @@
 		EDEA9CB527FD8AF100D0E868 /* BaseCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCategoryViewController.m; sourceTree = "<group>"; };
 		EDEA9CB627FD8AF100D0E868 /* BaseCategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCategoryView.m; sourceTree = "<group>"; };
 		EDEA9CB727FD8AF200D0E868 /* BaseCategoryHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCategoryHeaderView.h; sourceTree = "<group>"; };
-		EDEA9CBC27FD8E1B00D0E868 /* GOImagePreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GOImagePreviewView.h; sourceTree = "<group>"; };
-		EDEA9CBD27FD8E1B00D0E868 /* GOImagePreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GOImagePreviewView.m; sourceTree = "<group>"; };
 		EDEA9CD127FD987E00D0E868 /* GORecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GORecordButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -373,8 +373,8 @@
 		EDEA9CBB27FD8E0A00D0E868 /* GOImagePreviewView */ = {
 			isa = PBXGroup;
 			children = (
-				EDEA9CBC27FD8E1B00D0E868 /* GOImagePreviewView.h */,
-				EDEA9CBD27FD8E1B00D0E868 /* GOImagePreviewView.m */,
+				EDD27D422875A2E00093969B /* GOImagePreviewView.h */,
+				EDD27D432875A2E00093969B /* GOImagePreviewView.m */,
 			);
 			path = GOImagePreviewView;
 			sourceTree = "<group>";
@@ -523,7 +523,6 @@
 				EDEA9C7F27FD7A8200D0E868 /* GOAlertViewController.swift in Sources */,
 				EDEA9C6927FD77C800D0E868 /* GOImagesPagingView.m in Sources */,
 				EDEA9C9327FD7AFD00D0E868 /* GOPageControl.swift in Sources */,
-				EDEA9CBE27FD8E1B00D0E868 /* GOImagePreviewView.m in Sources */,
 				EDEA9C6C27FD77C800D0E868 /* GOPagingEnableLayout.m in Sources */,
 				EDEA9C3027FD6F6900D0E868 /* AppDelegate.m in Sources */,
 				EDEA9C8627FD7AA200D0E868 /* GOCustomTagsView.swift in Sources */,
@@ -533,6 +532,7 @@
 				EDEA9C5927FD707300D0E868 /* GOHorizontalColorsView.swift in Sources */,
 				EDEA9C6A27FD77C800D0E868 /* GOImagesPagingViewCell.m in Sources */,
 				EDEA9C8D27FD7ACD00D0E868 /* GOCategoryNavigationCell.swift in Sources */,
+				EDD27D442875A2E00093969B /* GOImagePreviewView.m in Sources */,
 				EDEA9C5427FD703200D0E868 /* GOEmptyDataViewManager.swift in Sources */,
 				EDEA9CD227FD987E00D0E868 /* GORecordButton.swift in Sources */,
 				EDEA9CB827FD8AF200D0E868 /* BaseCategoryHeaderView.m in Sources */,

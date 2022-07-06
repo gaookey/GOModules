@@ -49,6 +49,7 @@ import SDWebImageWebPCoder
             } else {
                 startTimer()
             }
+            views.removeAll()
             carousel.reloadData()
         }
     }
@@ -129,17 +130,17 @@ import SDWebImageWebPCoder
         }
         let index = carousel.currentItemIndex
         
-        if self.semanticContentAttribute == .forceLeftToRight {
-            if index == datas.count - 1 {
-                carousel.scrollToItem(at: 0, animated: true)
-            } else {
-                carousel.scrollToItem(at: index + 1, animated: true)
-            }
-        } else {
+        if self.semanticContentAttribute == .forceRightToLeft {
             if index == 0 {
                 carousel.scrollToItem(at: datas.count - 1, animated: true)
             } else {
                 carousel.scrollToItem(at: index - 1, animated: true)
+            }
+        } else {
+            if index == datas.count - 1 {
+                carousel.scrollToItem(at: 0, animated: true)
+            } else {
+                carousel.scrollToItem(at: index + 1, animated: true)
             }
         }
     }
@@ -189,14 +190,14 @@ extension GOImagesCarouselView: iCarouselDelegate, iCarouselDataSource {
         guard currentIndex < parameter.count else { return }
         
         var vs = [UIView]()
-        var itemView = views[index]
+        let itemView = views[index]
         
         if (itemView != nil) {
-            for i in 0..<imageUrls.count {
+            for _ in 0..<imageUrls.count {
                 vs.append(itemView!)
             }
         } else {
-            for i in 0..<imageUrls.count {
+            for _ in 0..<imageUrls.count {
                 vs.append(UIView())
             }
         }
